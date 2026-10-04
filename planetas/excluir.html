@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excluir Planeta</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <h1 class="mb-2">Excluir Planeta</h1>
+
+        <p class="text-body-secondary mb-4">
+            Selecione um planeta para removê-lo do sistema.
+        </p>
+
+        <div class="alert alert-warning" role="alert">
+            Atenção: a exclusão de um planeta não poderá ser desfeita.
+        </div>
+
+        <form>
+
+            <div class="mb-4">
+                <label for="planeta" class="form-label">
+                    Planeta
+                </label>
+
+                <select class="form-select" id="planeta">
+
+                    <option selected>
+                        Selecione um planeta
+                    </option>
+
+                    <option value="terra">
+                        Terra
+                    </option>
+
+                    <option value="marte">
+                        Marte
+                    </option>
+
+                    <option value="jupiter">
+                        Júpiter
+                    </option>
+
+                    <option value="saturno">
+                        Saturno
+                    </option>
+
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-danger">
+                Excluir planeta
+            </button>
+
+            <a href="../index.html" class="btn btn-secondary">
+                Voltar
+            </a>
+
+        </form>
+
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
