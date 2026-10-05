@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - developer
+  pull_request:
+    branches:
+      - main
+      - developer
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos do projeto
+        run: |
+          test -f index.html
+          test -f planetas/inserir.html
+          test -f planetas/alterar.html
+          test -f planetas/excluir.html
+          test -f planetas/procurar.html
+          test -f cometas/inserir.html
+          test -f cometas/alterar.html
+          test -f cometas/excluir.html
+          test -f cometas/procurar.html
