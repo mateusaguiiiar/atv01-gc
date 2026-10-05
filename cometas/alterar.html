@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cometa</title>
+
+```
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+```
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+```
+<h1 class="mb-4">Alterar Cometa</h1>
+
+<form>
+
+    <div class="mb-3">
+        <label for="id" class="form-label">ID do cometa</label>
+        <input
+            type="number"
+            class="form-control"
+            id="id"
+            name="id"
+            min="1"
+            placeholder="Digite o ID"
+            required
+        >
+    </div>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do cometa</label>
+        <input
+            type="text"
+            class="form-control"
+            id="nome"
+            name="nome"
+            placeholder="Digite o nome do cometa"
+            required
+        >
+    </div>
+
+    <div class="mb-3">
+        <label for="luas" class="form-label">Número de aparições</label>
+        <input
+            type="number"
+            class="form-control"
+            id="luas"
+            name="luas"
+            min="0"
+            placeholder="Digite o número de aparições"
+            required
+        >
+    </div>
+
+    <div class="mb-3">
+        <label for="diametro" class="form-label">Diâmetro (km)</label>
+        <input
+            type="number"
+            class="form-control"
+            id="diametro"
+            name="diametro"
+            step="0.01"
+            min="0"
+            placeholder="Digite o diâmetro"
+            required
+        >
+    </div>
+
+    <div class="mb-3">
+        <label for="periodico" class="form-label">É periódico?</label>
+        <select class="form-select" id="periodico" name="periodico" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">
+        Alterar
+    </button>
+
+    <a href="../index.html" class="btn btn-secondary">
+        Voltar
+    </a>
+
+</form>
+```
+
+</div>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
